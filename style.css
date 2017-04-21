@@ -1,0 +1,102 @@
+*{
+box-sizing: border-box;
+
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+h1{
+	text-align: center;
+	font-size: 2rem;
+	margin: 0px;
+	padding: 2px;
+	background-color: #000;
+	color: #fff;
+}
+
+.box{
+	text-align: center;
+	margin-right: -4px;
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	height: 25vw;
+ 
+
+}
+
+.box1{
+	background: url(img/sup.jpg) no-repeat;
+	background-size: cover ;
+
+}
+.box2{
+	background: url(img/wind.jpg) no-repeat;
+	background-size: cover ;
+}
+
+.box3{
+	background: url(img/surf.jpg) no-repeat;
+	background-size: cover ;
+}
+
+.box4{
+	background: url(img/snow.jpg) no-repeat;
+	background-size: cover ;
+}
+
+.box5{
+background: url(img/site.png) no-repeat;
+	background-size: cover ;
+}
+
+.box6{
+	background: url(img/vel.jpg) no-repeat;
+	background-size: cover ;
+}
+
+.box7{
+	
+	background: url(img/travel.jpg) no-repeat;
+	background-size: cover ;
+}
+
+.box8{
+	background: url(img/food.jpg) no-repeat;
+	background-size: cover ;
+}
+
+.first{
+	margin-bottom: -5px;
+}
+
+
+
+
+
+.text{
+	display: inline-block;
+	width: 100%;
+	height: 25vw;
+	position: absolute;
+	z-index: 2;
+	left:0;
+	opacity: 0;
+	color:blue;
+	background-color: rgba(0,0,0,.5);
+	transition: opacity 1s, color .5s;
+
+}
+
+
+.box:hover .text{
+	color:yellow;
+	opacity: 1;
+	transition: opacity 1s, color .5s;
+}
+
+a{
+	text-decoration: none;
+}
