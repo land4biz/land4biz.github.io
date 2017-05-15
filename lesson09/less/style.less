@@ -1,0 +1,131 @@
+@btn: #ffe13e;
+
+html, body{
+	margin: 0;
+	width: 100%;
+}
+
+html{
+	font-size: 10px;
+}
+
+*{
+	box-sizing: border-box;
+}
+.main-menu{
+	height: 147px;
+	width: 100%;
+	.logo{
+		padding: 59px 103px 50px 119px;
+		display: inline-block;
+	}
+	.menu{
+	font-size: 1.6rem;
+	margin-left:10% ;
+	padding-top: 62px;
+    padding-bottom: 35px;
+    padding-right: 10%;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 50px;
+	border-right: 1px solid #ebebeb;
+		a{
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		color: #202242;
+		margin-left: 45px;
+		}
+		a:hover{
+			color: #ffe34b;
+		}
+	}
+	.help-block{
+		margin-left: 2%;
+		display: inline-block;
+		&_text{
+			font-size: 1.2rem;
+			line-height: 0px;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+		}
+		button{
+			display: inline-block;
+			padding: 15px 30px;
+			background-color: @btn;
+			border: none;
+			margin-right: 3rem;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+		}
+		&_tel{
+			font-size: 2.4rem;
+			display: inline-block;
+			padding-left: 3rem;
+			border-left: 1px solid #babbc4;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+		}
+	}
+}
+
+.main{
+	padding-top: 250px;
+	width: 100%;
+	height: 800px;
+	background: url(../img/main-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	h1{
+		font-family: 'Rockwell';
+		font-size: 4.8rem;
+		color: #fff;
+	}
+	h2{
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: 3rem;
+		color: #fff;
+		margin-bottom: 4rem;
+	}
+	.form{
+		form{
+			margin-top: 75px;
+			.input-text{
+				font-family: 'Raleway', sans-serif;
+				font-weight: 400;
+			    width: 275px;
+				height: 57px;
+				outline: none;
+				padding-left: 20px;
+				font-size: 1.5rem;
+			}
+			select{
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				width: 108px;
+				height: 55px;
+				margin-left: -4px;
+				background-color: @btn;
+				border: none;
+				border-right: 1px solid #fff;
+				outline: none;
+			}
+			.input-submit{
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				width: 155px;
+				height: 55px;
+				background-color: @btn;
+				border: none;
+				outline: none;
+				color: #fff;
+				option{
+					font-family: 'Raleway', sans-serif;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
