@@ -1,0 +1,110 @@
+@photo: rgba(63, 255, 0,.4);
+
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+
+.border(@border; @color){
+	border: @border solid @color;
+}
+
+body{
+	text-align: center;
+}
+
+.box{
+	vertical-align: top;
+	margin-top: 6%;
+	margin-right: 25px;
+	display: inline-block;
+	width: 40vw;
+	height: 40vw;
+	background-color: #aeaeae;
+	overflow: hidden;
+	&:hover{
+		.wrap{
+			opacity:1;
+			transform: translateX(0%);
+			}
+		}
+	.wrap{
+			&-1{
+				opacity: 0;
+		transition: all 0.4s;
+		background-color: @photo;
+		height: 100%;
+		transform: translateX(100%);
+			}	
+
+			&-2{
+				opacity: 0;
+		transition: all 0.4s;
+		background-color: @photo;
+		height: 100%;
+		transform: translateX(-100%);
+			}
+			&-3{
+				opacity: 0;
+		transition: all 0.4s;
+		background-color: @photo;
+		height: 100%;
+		transform: translateX(100%);
+			}	
+
+			&-4{
+				opacity: 0;
+		transition: all 0.4s;
+		background-color: @photo;
+		height: 100%;
+		transform: translateX(-100%);
+			}
+		.sign{
+			
+			p{
+				margin-top: 0;
+				line-height: 60px;
+				margin-bottom: 400px;
+				padding-top: 50px;
+				font-size: 25px;
+				color: #fff;
+			}
+			a{
+				margin-top: 50px;
+				.border(2px; #fff);
+				padding: 25px;
+				.border-radius(25px);
+				text-decoration: none;
+				color: #fff;
+
+			}
+		}
+	}	
+}
+
+.box-1{
+	background: url(../img/tiger-2320819_1920.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.box-2{
+	background: url(../img/horse-2196755_1920.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.box-3{
+	background: url(../img/meditation-2214532_1280.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.box-4{
+	background: url(../img/strawberry-2293337_1920.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
