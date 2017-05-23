@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background: url(../img/bg-main.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.main .main-menu {
+  height: 110px;
+  width: 100%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.main .main-menu .logo {
+  display: inline-block;
+  height: 100%;
+  padding: 25px;
+}
+.main .main-menu .logo img {
+  width: 78px;
+}
+.main .main-menu .menu {
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+  height: 100%;
+  line-height: 80px;
+  margin-left: 30%;
+  font-size: 25px;
+}
+.main .main-menu .menu ul {
+  padding: 0;
+}
+.main .main-menu .menu ul li {
+  margin-right: 50px;
+  display: inline-block;
+}
+.main .main-menu .menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.4s;
+}
+.main .main-menu .menu ul li a:hover {
+  color: #ffcc00;
+}
+.main .main-menu .tel {
+  display: inline-block;
+  font-size: 20px;
+  height: 100%;
+  vertical-align: bottom;
+  margin-left: 420px;
+  line-height: 10px;
+  padding-top: 7px;
+  color: #fff;
+}
+.main-text {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 40px;
+  color: #fff;
+}
+.main .popup-buttom {
+  text-align: center;
+}
+.main .popup-buttom .popup-target {
+  text-decoration: none;
+  font-size: 40px;
+  color: #005dff;
+}
+.popup {
+  text-align: center;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+}
+.popup-overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.wrap:target {
+  display: block;
+}
