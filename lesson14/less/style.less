@@ -1,0 +1,83 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+
+.bad{ font-family: 'Bad Script', cursive;}
+
+.slider{
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item{
+	.bad;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 25%;
+	height: 100vh;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	&:hover{
+		flex-basis:100%;
+
+	}
+	span{
+		font-size: 50px;
+		text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 0 10px #000;
+	}
+}
+
+.item-1{
+	background:url(../img/serf.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.item-2{
+	background:url(../img/box.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.item-3{
+	background:url(../img/snow.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.item-4{
+	background:url(../img/vel.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+@media (max-width: 640px) {
+	.slider{
+		height: 100vh;
+		flex-flow: column;
+	}
+	.item{
+		width: 100%;
+		&:hover{
+			flex-basis:50%;
+		}
+	}
+}
