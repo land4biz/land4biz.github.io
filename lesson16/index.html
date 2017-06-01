@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <title>lesson16</title>
+  </head>
+  <body>
+   <div class="main">
+   		<a href="#" class="button-open-menu"><span></span></a>
+   		<div class="close-menu">
+   			<a class="button-close-menu" href="#"><span></span></a>
+   			<ul>
+   				<li><a href="#">О нас</a></li>
+   				<li><a href="#">Наши преимущества</a></li>
+   				<li><a href="#">Наши контакты</a></li>
+   				<li><a href="#">Корзина</a></li>
+   				<li><a class="bonus" href="#">Бонус</a></li>
+   			</ul>
+   		</div>
+   		<iframe class="video-on" width="560" height="315" src="https://www.youtube.com/embed/Az8RSGwgjQ8" frameborder="0" allowfullscreen></iframe>
+   </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+		function turn_video(on){
+			$('.video-on').css('display', on ? 'block' : 'none');
+		};
+
+    	$(document).ready(function(){
+    		$('.button-open-menu').click(function(){
+    			$('.close-menu').toggleClass('close-menu open-menu');
+    		});
+    		$('.button-close-menu').click(function(){
+    			$('.open-menu').toggleClass('close-menu open-menu');
+    		});
+    		$('.bonus').click(function(event){
+    			// для того чтобы не выключалось видео, при клике на main
+    			event.stopPropagation();
+    			turn_video(1);
+    			console.log(event);
+    			
+    		});
+    		$('.main').click(function(){
+    			turn_video(0);
+    			
+    		});
+			$(document).keydown(function(eventObject){
+				if (eventObject.which == 27){
+					turn_video(0);
+				};
+				if (eventObject.which == 49){
+					turn_video(1);
+				};
+				// alert('Вы ввели символ с клавиатуры. Его код равен ' + eventObject.which);
+			});
+    	});
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
