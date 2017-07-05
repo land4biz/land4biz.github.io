@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <title>lesson17</title>
+  </head>
+  <body>
+
+   <h1>Ответы на вопросы</h1>
+   <h2>Которые нам задают чаще всего</h2>
+	<hr>
+	<div class="acordion">    
+	<div class="tab"><a href="#">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a></div>
+	<div class="content"><p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает  около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат </p></div>
+
+	<div class="tab"><a href="#">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a></div>
+	<div class="content"><p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает  около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат </p></div>
+
+	<div class="tab"><a href="#">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a></div>
+	<div class="content"><p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает  около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат </p></div>
+
+	<div class="tab"><a href="#">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a></div>
+	<div class="content"><p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает  около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат </p></div>
+
+	<div class="tab"><a href="#">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a></div>
+	<div class="content"><p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает  около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат </p></div>
+
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		tab = $('.tab')
+    		content = $('.content')
+
+
+    		function FindNumberTab(ClickTab){
+    			return $(ClickTab).index();    			
+    		};
+    		function FindContent(content, TabNumber){
+    			 return content[TabNumber/2];		
+    		};
+    		function RemoveClassOpen(){
+    			content.removeClass('open')			
+    		};
+    		function ToggleClassOpen(Contents){
+    			$(Contents).toggleClass('open')			
+    		};
+
+
+    		tab.click(function(){
+    			ClickTab = this;
+                console.log(ClickTab)
+    			var TabNumber = FindNumberTab(ClickTab);
+    			console.log(TabNumber)
+    			var Contents = FindContent(content, TabNumber);
+    			console.log(Contents)
+    			RemoveClassOpen();
+    			ToggleClassOpen(Contents);    			
+    		});
+    	});
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
