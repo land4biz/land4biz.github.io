@@ -1,0 +1,318 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+@main-color: #ffff33;
+
+.book{
+	font-family: 'P22 Underground CY Pro book';
+	font-weight: bold;
+}
+
+.heavy{
+	font-family: 'P22 Underground CY Pro heavy';
+	font-weight: 900;
+}
+
+.medium{
+	font-family: 'P22 Underground CY Pro medium';
+	font-weight: 500;
+}
+
+.demi{
+	font-family: 'P22 Underground CY Pro demi';
+	font-weight: normal;
+}
+
+.thin{
+	font-family: 'P22 Underground CY Pro thin';
+	font-weight: 100;
+}
+
+.main{
+	width: 100%;
+	height: 750px;
+	background: url(../img/bg-main.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	&_header{
+		padding-top: 50px;
+		&_logo{
+			display: inline-block;
+			margin-left: 37rem;
+			img{
+				vertical-align: bottom;
+				width: 100px;
+			}
+			.text{
+				line-height: 2px;
+				display: inline-block;
+			}
+			&_firstText{
+				font-size:20px ;
+				.heavy;				
+			}
+			&_secondText{
+				font-size: 13px;
+				.thin;
+				color: #8c8a89;
+			}
+		}
+		&_callback{
+			margin-left: 50rem;
+			display: inline-block;
+			a{
+				text-decoration: none;
+				.thin;
+				font: 15px;
+				color: #898281;
+				border: 1px solid #fff;
+				border-radius: 4px;
+				padding: 14px 25px;
+			}
+		}
+		&_tel{
+			margin-left: 3rem;
+			display: inline-block;
+			font-size: 25px;
+			color: #fff;
+			.heavy;
+
+		}
+	}
+	&_text{
+		h1{
+			text-transform: uppercase;
+			font-size: 37px;
+			.heavy;
+			color: @main-color;
+			text-align: center;
+		}
+	}
+	&_advantage{
+		display: inline-block;
+		margin-left: 47rem;
+		p{
+			font-size: 20px;
+			.book;
+			img{
+				width: 10px;
+			}
+		}
+	}
+	&_form{
+		text-align: center;
+		padding: 20px;
+		margin-left: 8rem;
+		display: inline-block;
+		width: 420px;
+  		height: 413px;
+  		border-radius: 4px;
+  		background-color: #fff;
+  		h2{
+  			text-align: center;
+  			color: #000;
+  			font-size: 22px;
+  			.book;  			
+  			font-weight: 100;
+  			color: #333333;
+  		}
+  		input{
+  			padding: 20px 100px 16px 25px;
+  			border-radius: 0 4px 4px 0;
+  			border: 1px solid #333333;
+  			height: 60px; 
+  			color: #000; 			
+  		}
+  		.icon_user{
+  			width: 60px;
+  			height: 60px;
+  			background-color: #333333;
+  			display: inline-block;
+  			margin-right: -4px;
+  			text-align: center;
+  			vertical-align: bottom;
+  			border-radius: 4px 0 0 4px;
+  			img{
+				margin-top: 50%;
+    			transform: translateY(-50%);
+  			}  			
+  		}
+  		.first_input{
+  			margin-bottom: 10px;
+  		}
+  		.second_input{
+	  			.icon_tel{
+	  			width: 60px;
+	  			height: 60px;
+	  			background-color: #333333;
+	  			display: inline-block;
+	  			margin-right: -4px;
+	  			text-align: center;
+	  			vertical-align: bottom;
+	  			border-radius: 4px 0 0 4px;
+	  			img{
+					margin-top: 50%;
+	    			transform: translateY(-50%);
+	  			}  			
+	  		}
+  		}
+  		.form_btn{
+  			    margin-top: 10px;
+			    width: 360px;
+			    height: 55px;
+			    background-color: #ffff33;
+			    color: #000;
+			    text-align: center;
+			    display: inline-block;
+			    line-height: 55px;
+			    text-decoration: none;
+			    font-size: 15px;
+			    .book;
+			    -webkit-box-shadow: 0px 8px 5px -2px #999900;
+			    box-shadow: 0px 8px 5px -2px #999900;
+  		}
+
+	}
+	&_money{
+		position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    top: 660px;
+	}
+}
+.box_advantage{
+	height: 830px;
+	text-align: center;
+	.all_box{
+		display: inline-block;
+		margin-top: 100px;
+		width: 1200px;
+		.box{
+			vertical-align: middle;
+			width: 200px;
+			margin-bottom: 120px;
+			margin-right: 70px;
+			display: inline-block;
+			p{
+				.book;
+				font-size: 18px;
+				color: #000;
+			}
+			span{
+				line-height: 80px;
+				display: inline-block;
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background-color: @main-color;
+			}
+		}
+	}
+}
+
+@media (max-width: 1550px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media(max-width: 1200px) {
+  .main_text h1{
+    font-size: 30px;
+  }
+  html{
+    font-size: 3px;
+  }
+  .main_header_callback{
+        margin-left: 106rem;
+  }
+}
+@media (max-width: 1120px) {
+  .box_advantage .all_box .box{
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 1090px){
+  .main_advantage{
+    display: block;
+  }
+
+  .main_form{
+    margin-left: 340px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main{
+    height: 960px;
+  }
+
+  .main_money{
+    top: 870px;
+  }
+  .main_header_callback{
+    margin-left: 60rem;
+  }
+  .main_text h1{
+  	font-size: 25px;
+  }
+}
+
+@media (max-width: 940px){
+	html{
+		font-size: 1px;
+	}
+
+	.box_advantage .all_box .box {
+		    display: block;
+		    margin: 37px auto;
+		    transform: translateX(-70%);
+	}
+}
+
+@media (max-width: 800px){
+	.main_header_logo{
+		display: block;
+		margin-bottom: 30px;
+	}
+	.main_header{
+		text-align: center;
+	}
+
+	.main_text h1{
+		font-size: 23px;
+	}
+
+	.box_advantage .all_box .box{
+		transform: translateX(-113%);
+	}
+}
+
+@media (max-width: 620px){
+	.main{
+		height: 1020px;
+	}
+	.main_money{
+		top: 950px;
+	}
+	.box_advantage .all_box .box{
+		transform: translateX(-150%);
+	}	
+}
+
+@media (max-width: 480px){
+	.box_advantage .all_box .box{
+		transform: translateX(-200%);
+	}
+}
