@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Ubuntu:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <title>lesson18</title>
+  </head>
+  <body>
+   <div class="main">
+        <div class="wrapper_form">
+            <div class="photo">
+                <picture>
+                    <source type="img/svg+xml" srcset="img/form_photo.svg">
+                    <img src="img/form_photo.png" alt="Фото">
+                </picture>
+            </div>
+            <div class="form">
+                <h1>Сохрани свой аккаунт</h1>
+                <h2>Получи бесплатно неограниченное количество <br> форм, вопросов и ответов</h2>
+                <form id="form" action="thanks.html">
+                    <div class="input_wrap">
+                        <img src="img/user.png" alt="">
+                        <input type="text" name="name" placeholder="Имя или никнейм">
+                    </div>
+                    
+                    <div class="input_wrap">
+                        <img src="img/message.png" alt="">                
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    
+                    <div class="input_wrap">
+                        <img src="img/lock.png" alt="">
+                        <input type="password" placeholder="Пароль">
+                    </div>
+                    
+                    <button type="submit">Сохранить <img src="img/angel-right.png" alt="стрелка"></button>
+                    <p>У вас уже есть аккаунт? <a href="#">Войти</a></p>
+
+                </form>
+            </div>            
+        </div>       
+   </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+       $(document).ready(function(){
+            $('#form').validate({
+                rules:{
+                    name:{
+                        required: true,
+                        minlength:2
+                    },
+                    email:{
+                        required:true,
+                        email:true
+                    }
+                },
+                messages:{
+                    name:{
+                        required:'Это поле обязательно!',
+                        minlength:'Введите минимум 2 символа!'
+                    },
+                    email:{
+                        required:'Это поле обязательно!',
+                        email:'Введите корректный email'
+                    }
+                }
+            });
+        }); 
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+.ubunt {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+.ubuntMedium {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+.OpenSans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/main-bg.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 60px;
+}
+.main .wrapper_form {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  height: 830px;
+  background-color: #fff;
+}
+.main .wrapper_form .photo {
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+.main .wrapper_form .photo img {
+  margin: 210px 0px 0px 100px;
+  width: 400px;
+}
+.main .wrapper_form .form {
+  display: inline-block;
+  width: 49.6%;
+  height: 100%;
+  text-align: center;
+  padding: 100px 50px 0px 0px;
+}
+.main .wrapper_form .form h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+.main .wrapper_form .form h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+.main .wrapper_form .form form {
+  text-align: center;
+  padding-top: 50px;
+}
+.main .wrapper_form .form form .input_wrap {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #aeaeae;
+  width: 380px;
+}
+.main .wrapper_form .form form input {
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  border: none;
+  padding: 5px;
+  padding-left: 10px;
+  outline: none;
+  height: 40px;
+  width: 350px;
+}
+.main .wrapper_form .form form img {
+  display: inline-block;
+}
+.main .wrapper_form .form form hr {
+  width: 360px;
+  margin-bottom: 50px;
+  margin-top: 4px;
+}
+.main .wrapper_form .form form button {
+  width: 200px;
+  height: 65px;
+  color: #fff;
+  border: none;
+  background-color: #82c5c3;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 50px;
+  outline: none;
+}
+.main .wrapper_form .form form p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.main .wrapper_form .form form p a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: #f69a7a;
+}
+.error {
+  display: block;
+  color: red;
+}
